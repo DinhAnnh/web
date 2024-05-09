@@ -28,7 +28,7 @@ session_start();
         </div>
       </div>
     </nav>
-    <h1 class="page-header text-center">Cart Details</h1>
+    <h1 class="page-header text-center">Thông tin giỏ hàng</h1>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <?php 
@@ -116,7 +116,7 @@ session_start();
                     </tr>
                 </tbody>
             </table>
-            <a href="index.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
+            <a href="index1.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
             <button type="submit" class="btn btn-success" name="save">Save Changes</button>
             <a href="clear_cart.php" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Clear Cart</a>
             <a href="checkout.php" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Checkout</a>

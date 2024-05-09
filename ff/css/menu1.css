@@ -83,17 +83,6 @@ body{
     transform:translateX(-50%);
   }
 
-  .category{
-      text-align: center;
-      margin:20px;
-  }
-
-  .category h4{
-      font-size: 20px;
-      color: goldenrod;
-      border-bottom: 2px solid darkolivegreen;
-      padding-bottom: 1em;
-  }
 
   .menu{
     display:flex;

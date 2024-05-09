@@ -19,88 +19,87 @@ $results=mysqli_query($conn,$sql_select);
 </head>
 <body>
     <div class="nav">
-        <a href="index1.php">Home</a>
+        <a href="index1.php">Trang chủ</a>
         <a href="menu1.html" >Menu</a>
-        <a href="contact.php" class="active">Contact</a>
-        <a href="about.html">About</a>
-        <a href="login.php">Login</a>
-        <a href="registration.php">Registration</a>
+        <a href="contact.php" class="active">Liên hệ</a>
+        <a href="about.html">Thông tin</a>
+        <a href="login.php">Đăng nhập</a>
+        <a href="registration.php">Đăng ký</a>
          
         
         
     </div>
 
     <div class="wrapper">
-         <h1>Checkout page</h1>
-         <p>Thank you for choosing us<br>
+         <h1>Trang thanh toán</h1>
+         <p>Cảm ơn bạn<br>
         </p>
 
         <div class="contact_box">
             <div class="box1">
 
-                <h3>Order</h3>
+                <h3>Orders</h3>
                 <form action="" method="POST">
                     <div class="row_input">
                         <div class="input_group">
-                            <label for="Name">User Name:</label>
-                            <input type="text" name="name" placeholder="username">
+                            <label for="Name">Họ tên:</label>
+                            <input type="text" name="name" placeholder="John">
                         </div>
                         <div class="input_group">
-                            <label for="Phone">Phone:</label>
-                            <input type="text" name="phone" placeholder="0712 356 789">
+                            <label for="Phone">Số điện thoại:</label>
+                            <input type="text" name="phone" placeholder="99999999">
                         </div>
                     </div>
                     <div class="row_input">
                     <div class="input_group">
-                        <label for="Food">Food of choice:</label>
-                        <input type="text" name="food" placeholder="What have you chosen">
+                        <label for="Food">Sản phẩm:</label>
+                        <input type="text" name="food" placeholder="Steak">
                     </div>
                     <div class="input_group">
-                        <label for="Servings">Serving size:</label>
-                        <input type="text" name="size" placeholder="small/medium/large">
+                        <label for="Servings">Phục vụ:</label>
+                        <input type="text" name="size" placeholder="nhanh/chậm">
                     </div>
                     </div>
 
                     <div class="row_input">
                         <div class="input_group">
-                            <label for="Country">Country:</label>
-                            <input type="text" name="country" placeholder="Country">
+                            <label for="Country">Thành phố:</label>
+                            <input type="text" name="country" placeholder="Hà Nội">
                         </div>
                         <div class="input_group">
-                            <label for="Payment">Payment method of choice:</label>
-                            <input type="text" name="payment" placeholder="Cash/Mpesa/Debit/Credit card">
+                            <label for="Payment">Hình thức thanh toán:</label>
+                            <input type="text" name="payment" placeholder="Tiền mặt/Chuyển khoản/Thẻ tín dụng">
                         </div>
                         </div>
 
                   
 
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit">Chấp nhận</button>
                 </form>
             </div>
             <div class="box2">
 
-                <h3>Connect with us.</h3>
+                <h3>Liên hệ chúng tôi.</h3>
 
                 <table>
                     <tr>
                         <td >Email:</td>
-                        <td >chakura@yahoo.com</td>
+                        <td >abc@1123.com</td>
                     </tr>
                     <tr>
                         <td >Phone:</td>
-                        <td >020 356 120 912</td>
+                        <td >099999999</td>
                     </tr>
                     <tr>
                         <td >Location:</td>
-                        <td >Highway Plaza, ground floor <br>
-                            near Ole Sangale Road.</td>
+                        <td >218 Lĩnh Nam - Hoàng Mai - Hà Nội.</td>
                     </tr>
                 </table>
 
                 <br>
                 <br>
                 <br>
-                <h3>Payment is upon delivery.</h3>
+                <h3>Thanh toán khi giao hàng.</h3>
 
                 
             </div>

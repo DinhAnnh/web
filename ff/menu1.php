@@ -81,10 +81,10 @@ if(isset($_GET["action"]))
     <div class="nav">
        
 
-        <a href="index1.php">Home</a>
+        <a href="index1.php">Trang chủ</a>
         <a href="menu1.php" class="active">Menu</a>
-        <a href="contact.php">Contact</a>
-        <a href="about.html">About</a>
+        <a href="contact.php">Liên hệ</a>
+        <a href="about.html">Thông tin</a>
         <a href="profile.php"><i class="fas fa-user"></i><?php echo $_SESSION['user']['userName'];?></a>
 
         <a href="process_order.php">
@@ -97,16 +97,12 @@ if(isset($_GET["action"]))
 
     <div class="wrapper">
         <div class="title">
-            <h4><span>Freshness with every bite</span>our menu</h4>
+            <h4><span>Tươi ngon với từng miếng ăn</span>với menu của chúng tôi</h4>
         </div>
 
         
 
-        <div class="category">
-            <h4>Burger deals</h4>
-        </div>
-
-
+    
 
         <div class="menu1">
 
@@ -123,7 +119,7 @@ if(isset($_GET["action"]))
                             <div class="menu-content">
                                 <h4><?php echo $rows['food_name']; ?><span><?php echo $rows['food_price']; ?>VND</span></h4>
                                 <p><?php echo $rows['food_description'] ?></p>
-                                <label for="quantity">Quantity:</label>
+                                <label for="quantity">Số lượng:</label>
                                 <input type="text" name="quantity" value="1" class="form-control" style="border: 2px solid #556b2f;
                                                                                                          border-radius: 4px; padding: 12px 20px;">
 
@@ -132,7 +128,7 @@ if(isset($_GET["action"]))
 						        <input type="hidden" name="hidden_price" value="<?php echo $rows["food_price"]; ?>">
                                 
                                 
-                                <button type="submit" class="button" name="add_to_cart"><span>Order Now</span></button>
+                                <button type="submit" class="button" name="add_to_cart"><span>Đặt ngay</span></button>
                                 
                             </div>
                         </div>

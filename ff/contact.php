@@ -13,7 +13,7 @@ if (!isset($_SESSION['clientLoggedIn'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact page</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -22,31 +22,31 @@ if (!isset($_SESSION['clientLoggedIn'])) {
 
 <body>
     <div class="nav">
-        <a href="index1.php">Home</a>
+        <a href="index1.php">Trang chủ</a>
         <a href="menu1.php" >Menu</a>
-        <a href="contact.php" class="active">Contact</a>
-        <a href="about.html">About</a>
+        <a href="contact.php" class="active">Liên hệ</a>
+        <a href="about.html">Thông tin</a>
         <a href="profile.php"><i class="fas fa-user"></i><?php echo $_SESSION['user']['userName'];?></a>
         
     </div>
     <div class="wrapper">
-         <h1>Get in touch</h1>
-         <p>Want to get in touch? Feel free to drop some feeback.<br>
-            Here's how to reach us...<br></p>
+         <h1>Liên lạc</h1>
+         <p>Bạn muốn giữ liên lạc với chúng tôi không? Vui lòng gửi một số phản hồi..<br>
+            Đây là thông tin liên lạc của chúng tôi...<br></p>
 
         <div class="contact_box">
             <div class="box1">
 
-                <h3>Leave some feedback.</h3>
+                <h3>Để lại một vài phản hổi.</h3>
                 <form action="process_contact.php" method="POST">
                     <div class="row_input">
                         <div class="input_group">
-                            <label for="Name">User Name</label>
-                            <input type="text" name="name" placeholder="username">
+                            <label for="Name">Tài khoản</label>
+                            <input type="text" name="name" placeholder="Tài khoản">
                         </div>
                         <div class="input_group">
-                            <label for="Phone">Phone</label>
-                            <input type="text" name="phoneNo" placeholder="0712 356 789">
+                            <label for="Phone">Số điện thoại</label>
+                            <input type="text" name="phoneNo" placeholder="09999999">
                         </div>
                     </div>
                     <div class="row_input">
@@ -55,15 +55,15 @@ if (!isset($_SESSION['clientLoggedIn'])) {
                         <input type="text" name="email" placeholder="Jd@gmail.com">
                     </div>
                     <div class="input_group">
-                        <label for="Subject">Subject</label>
-                        <input type="text" name="subject" placeholder="Inquiry/Request/Feedback">
+                        <label for="Subject">Nội dung</label>
+                        <input type="text" name="subject" placeholder="Thắc mắc/Yêu cầu/Phản hồi">
                     </div>
                     </div>
 
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="10" placeholder="Inquiry/Request/Feedback"></textarea>
+                    <label for="message">Phản hồi</label>
+                    <textarea name="message" id="message" rows="10" placeholder="Thắc mắc/Yêu cầu/Phản hồi"></textarea>
 
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit">Chấp nhận</button>
                 </form>
             </div>
             <div class="box2">
