@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 24, 2024 lúc 06:56 PM
+-- Thời gian đã tạo: Th5 11, 2024 lúc 06:44 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.0.30
 
@@ -57,7 +57,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `fullname`, `phoneNumber`, `email`, `userSubject`, `userMessage`) VALUES
-(1, 'Tuan Anh', 999999999, 'dqtanh.dhti15a22hn@sv.uneti.edu.vn', 'Inquiry', 'None');
+(1, 'Tuan Anh', 999999999, 'dqtanh.dhti15a22hn@sv.uneti.edu.vn', 'Inquiry', 'None'),
+(3, '', 0, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -173,7 +174,21 @@ INSERT INTO `orders` (`order_id`, `food_id`, `customer_id`, `quantity`, `Total`,
 (16, 1, 18, 1, 80000, '2024-04-24'),
 (17, 2, 18, 1, 120000, '2024-04-24'),
 (18, 1, 18, 1, 80000, '2024-04-24'),
-(19, 2, 18, 1, 120000, '2024-04-24');
+(19, 2, 18, 1, 120000, '2024-04-24'),
+(20, 1, 18, 1, 80000, '2024-05-09'),
+(21, 2, 18, 1, 120000, '2024-05-09'),
+(22, 1, 18, 1, 80000, '2024-05-09'),
+(23, 1, 18, 1, 80000, '2024-05-09'),
+(24, 2, 18, 1, 120000, '2024-05-09'),
+(25, 1, 6, 1, 80000, '2024-05-11'),
+(26, 2, 6, 1, 120000, '2024-05-11'),
+(27, 1, 6, 1, 80000, '2024-05-11'),
+(28, 2, 6, 1, 120000, '2024-05-11'),
+(29, 3, 6, 1, 290000, '2024-05-11'),
+(30, 4, 6, 1, 150000, '2024-05-11'),
+(31, 5, 6, 1, 500000, '2024-05-11'),
+(32, 8, 6, 1, 350000, '2024-05-11'),
+(33, 16, 6, 1, 50000, '2024-05-11');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -221,13 +236,13 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT cho bảng `checkout`
 --
 ALTER TABLE `checkout`
-  MODIFY `order_id` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `contact_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `customer`
@@ -245,7 +260,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT cho bảng `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
