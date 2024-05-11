@@ -121,29 +121,29 @@ $results=mysqli_query($conn,$sql_select);
   
 <body>
 <div class="nav">
-        <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
         <a href="profile.php" class="user"><i class="fas fa-user"></i><?php echo $_SESSION['user']['userName']; ?></a> 
         <a href="view_order.php" class="active">Orders</a>
-        <a href="view_food.php">Food</a>
-        <a href="upload_image.php">Upload</a>
-        <a href="displayUsers.php">Home</a>
+        <a href="view_food.php">Menu</a>
+        <a href="upload_image.php">Thêm</a>
+        <a href="displayUsers.php">Trang chủ</a>
         
         
     </div>
     <section>
-        <h1>ORDER DETAILS</h1>
+        <h1>Chi tiết</h1>
         <!-- TABLE CONSTRUCTION-->
         <table>
             <tr>
-                <th>Order id</th>
-                <th>Food id</th>
-                <th>Customer id</th>
-                <th>First Name</th>
-                <th>Second Name</th>
-                <th>Food Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Date of Purchase</th>
+                <th>Số thứ tự</th>
+                <th>Mã</th>
+                <th>Mã khách hàng</th>
+                <th>Họ</th>
+                <th>Tên</th>
+                <th>Tên món ăn</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Ngày mua hàng</th>
             </tr>
             <!-- PHP CODE TO FETCH DATA FROM ROWS-->
    

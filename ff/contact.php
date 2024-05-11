@@ -68,21 +68,20 @@ if (!isset($_SESSION['clientLoggedIn'])) {
             </div>
             <div class="box2">
 
-                <h3>Connect with us.</h3>
+                <h3>Thông tin liên lạc</h3>.</h3>
 
                 <table>
                     <tr>
                         <td >Email:</td>
-                        <td >chakura@yahoo.com</td>
+                        <td >abc@1123.com</td>
                     </tr>
                     <tr>
-                        <td >Phone:</td>
-                        <td >020 356 120 912</td>
+                        <td >Hotline:</td>
+                        <td >099999999</td>
                     </tr>
                     <tr>
-                        <td >Location:</td>
-                        <td >Highway Plaza, ground floor <br>
-                            near Ole Sangale Road.</td>
+                        <td >Địa chỉ:</td>
+                        <td >218 Lĩnh Nam - Hoàng Mai - Hà Nội.</td>
                     </tr>
                 </table>
             </div>

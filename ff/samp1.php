@@ -11,7 +11,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Simple Shopping Cart using Session in PHP</title>
+    <title>Menu</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <style>
         .product_image {
@@ -30,28 +30,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Simple Shopping Cart</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <!-- left nav here -->
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="view_cart.php"><span class="badge"><?php echo count($_SESSION['cart']); ?></span> Cart <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <?php
         // Thông báo
         if(isset($_SESSION['message'])){
@@ -88,7 +66,7 @@
                             <p class="pull-left"><b><?php echo $row['food_price']; ?></b></p>
                             <form method="POST" action="add_cart.php">
                                 <input type="hidden" name="id" value="<?php echo $row['food_id']; ?>">
-                                <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span> Cart</button>
+                                <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span>Thêm</button>
                             </form>
                         </div>
                     </div>

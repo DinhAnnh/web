@@ -10,7 +10,7 @@ require_once('connect.php');
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Profile Page</title>
+		<title>Hồ sơ khách hàng</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
         <style>
          body{
@@ -92,30 +92,30 @@ require_once('connect.php');
 		<nav class="navtop">
 			<div>
 				<h1>CHAKURA</h1>
-				<a href="index1.php">Home</a>
+				<a href="index1.php">Trang chủ</a>
                 <a href="menu1.php" >Menu</a>
-                <a href="contact.php">Contact</a>
-                <a href="about.html">About</a>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
+                <a href="contact.php">Liên hệ</a>
+                <a href="about.html">Thông tin</a>
+				<a href="profile.php"><i class="fas fa-user-circle"></i>Hồ sơ</a>
 			    <a href="profile.php"><i class="fas fa-user"></i><?php echo $_SESSION['user']['userName'];?></a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
 			</div>
 		</nav>
 		<div class="content">
-			<h2>Profile </h2>
+			<h2>Hồ sơ</h2>
 			<div>
-				<p>ACOUNT DETAILS:</p>
+				<p>Thông tin người dùng:</p>
 				<table>
 					<tr>
-						<td>Username:</td>
+						<td>Tài khoản:</td>
 						<td><?=$_SESSION['userName']?></td>
 					</tr>
                     <tr>
-						<td>First name:</td>
+						<td>Họ:</td>
 						<td><?=$_SESSION['FirstName']?></td>
 					</tr>
                     <tr>
-						<td>Second name:</td>
+						<td>Tên:</td>
 						<td><?=$_SESSION['SecondName']?></td>
 					</tr>
                     <tr>
@@ -123,7 +123,7 @@ require_once('connect.php');
 						<td><?=$_SESSION['Email']?></td>
 					</tr>
 					<tr>
-						<td>Password:</td>
+						<td>Mật khẩu:</td>
 						<td><?=$_SESSION['Password']?></td>
 					</tr>
 				</table>

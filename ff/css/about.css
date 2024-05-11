@@ -55,7 +55,7 @@ body{
 
 img{
     width:100%;
-    padding: 5px;
+    padding: 50px;
 }
 
 .column{
@@ -124,10 +124,6 @@ color:darkolivegreen;
     content: "";
     display: table;
     clear: both;
-}
-
-.footer{
-    background-color:dimgray;
 }
 
 ul{
